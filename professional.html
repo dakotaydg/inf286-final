@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+	<title>My Education</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/personalcss.css" />
+	<link rel="shortcut icon" href="https://img.icons8.com/material-outlined/24/000000/like--v2.png">
+</head>
+<body>
+	<header>
+		<div style="margin:20px">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="professional.html">PROFESSIONAL</a></li>
+				<li><a href="causes.html">CAUSES/ORGANIZATIONS</a></li>
+				<li><a href="interests.html">INTERESTS</a></li>
+				<li><a href="hobbies.html">HOBBIES</a></li>
+			</ul>
+		</div>
+	</header>
+	<section id="center">
+		<h1>My Education</h1>
+		<p>I am currently a third-year student at Northern Kentucky University. I am majoring in Business Information Systems, specifically in the track of Information Systems Auditing. I am also minoring in Business Analytics and General Business.</p>
+	</section>
+	<section>
+		<h1 id="center">Notable Classes I've Taken</h1>
+		<div id="flex">
+			<div id="myClasses1">
+				<h3 id="look">Click a class name to learn more:</h3>
+				<button class="accordion">INF 286-Introduction to Web Development</button>
+				<div class="info">
+					<p>This class taught me the basics of web design and development using HTML, CSS, and JavaScript, as well as web development best practices. This has been my favorite class at NKU so far.</p>
+				</div>
+				<button class="accordion">INF 282-Introduction to Databases</button>
+				<div class="info">
+					<p>This class taught me about designing, creating, and manipulating relational databases. I also learned how to use Microsoft Access and the basics of Structured Query Langauge.</p>
+				</div>
+				<button class="accordion">BIS 300-Management Information Systems</button>
+				<div class="info">
+					<p>This class taught me the fundamentals of management information systems, as well as how to apply problem-solving skills in Microsoft Excel, Microsoft Access, and web development.</p>
+				</div>
+				<button class="accordion">STA 205-Statistical Methods</button>
+				<div class="info">
+					<p>This class taught me many different ways of measuring data, hypothesis testing, regression, and analysis using statistical software.</p>
+				</div>
+				<button class="accordion">INF 284-Introduction to Computer Networks</button>
+				<div class="info">
+					<p>This class taught me the principles of computer networking, especially: network design, HTTP, email, DNS, SSH, DHCP, and TCP/IP stack protocols.</p>
+				</div>
+				<button class="accordion">ECO 200 & 201-Macroeconomics & Microeconomics</button>
+				<div class="info">
+					<p>These classes taught me concepts in introductory macroeconomics and microeconomics, such as: economic growth, business cycles and inflation, international trade, supply and demand, monopoly and its regulation, capitalism, etc.</p>
+				</div>
+				<button class="accordion">FIN 305-Introduction to Finance</button>
+				<div class="info">
+					<p>This class taught me various basic concepts of finance, including: interest rates, risk analysis, time value of money, financial planning, etc.</p>
+				</div>
+				<button class="accordion">ACC 200 & 201-Financial & Managerial Accounting</button>
+				<div class="info">
+					<p>These classes taught me concepts in financial and managerial accounting, such as: financial statement analysis, assets, liabilities, equity, receivables, cash flows, and making business decisions.</p>
+				</div>
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var x;
+					for (x = 0; x < acc.length; x++) {
+					  acc[x].addEventListener("click", function() {
+						this.classList.toggle("active");
+
+						var info = this.nextElementSibling;
+						if (info.style.display === "block") {
+						  info.style.display = "none";
+						} else {
+						  info.style.display = "block";
+						}
+					  });
+					}
+				</script>
+			</div>
+			<div>
+				<img src="assets/img/bis.png" id="bis">
+			</div>
+		<div>
+	</section>
+	<section>
+		<h1 id="center">My Relevant Work Experience</h1>
+		<div id="myJob">
+			<div>
+				<span>
+					<img src="assets/img/blackboard.png" id="bb">
+				</span>
+				<span id="job">
+					<h3 id="center">Blackboard Inc. – Tech Support/Customer Service Representative</h3>
+					<ul>
+						<li>Provided in-depth troubleshooting for school-provided laptops, peripherals, and printers, as well as troubleshooting for browser and software issues.</li>
+						<li>Diagnosed issues for students/parents that weren’t good with technology using screen share software.</li>
+						<li>Educated students and parents on using LMS, course-related sites, and provided course materials.</li>
+						<li>Located correct course materials, replaced incorrect/missing products, and initiated refunds for customers.</li>
+						<li>Assisted clients using Salesforce and LogMeIn Rescue (remote troubleshooting software).</li>
+						<li>Completed web tickets while handling live customer queries through chat and phone.</li>
+					</ul>
+				</span>
+			</div>
+		</div>
+	</section>
+	<br  /><br  />
+	<a href="professional.html"><div id="top"><br  />🢙TOP🢙</div></a>
+	<footer>
+		Contact me at mcmullind2@mymail.nku.edu or fill out the contact form below!
+		<br  /><br  />
+		<form>
+			<label>Name:</label>
+			<input type="text" id="name" placeholder="John Doe">
+			<br  />
+			<label>Email:</label>
+			<input type="email" id="email" placeholder="name@email.com">
+			<br  />
+			<label>Phone:</label>
+			<input type="phone" id="phone" placeholder="123-456-7890">
+			<br  /><br  />
+			<label>Comment:</label>
+			<input type="text" id="comment" placeholder="What's on your mind?" style="width:300px">
+			<br  /><br  />
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</footer>
+</body>
+</html>

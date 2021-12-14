@@ -1,0 +1,62 @@
+/*for regular computer (or..my computer at least lol*/
+body{
+	background-color:#FFE5B4;
+}
+img{
+	height: 500px;
+	width: 700px;
+}
+.slideshow{
+	max-width: 750px;
+	max-height: 550px;
+	margin: auto;
+}
+.slide{
+	display: none;
+}
+.prev, .next {
+	background-color:#36454F;
+	cursor: pointer;
+	position: relative;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: #FFE5B4;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0 3px 3px 0;
+}
+.prev:hover, .next:hover {
+	background-color: #36454F;
+}
+.slideNumber {
+	font-family: "Montserrat";
+	background-color: #36454F;
+	color: #f2f2f2;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 12px;
+	position: relative;
+	top: 8px;
+}
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #717171;
+	border-radius: 50%;
+	display: inline-block;
+}
+.active, .dot:hover {
+	background-color: #36454F;
+}
+
+/*for smaller screens (tested with smallest window size on google chrome)*/
+@media screen and (max-width: 1250px) {
+	img{
+		height: 250px;
+		width: 450px;
+	}
+}
